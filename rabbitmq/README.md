@@ -42,13 +42,13 @@ kubectl create namespace test-rabbitmq
 * For kubernetes 1.6 or above, RBAC Authorization feature enabled by default. It need configure RBAC related stuff to support access nodes info successfully by plugin. So deploy RBAC `YAML` file():
 
 ```
-kubectl create -f examples/k8s_statefulsets/rabbitmq_rbac.yaml
+kubectl create -f rabbitmq/rabbitmq_rbac.yaml
 ```
 
 * Deploy Service/ConfigMap/Statefulset `YAML` file:
 
 ```
-kubectl create -f examples/k8s_statefulsets/rabbitmq_statefulsets.yaml
+kubectl create -f rabbitmq/rabbitmq_statefulsets.yaml
 ```
 6. Check the cluster status:
 
