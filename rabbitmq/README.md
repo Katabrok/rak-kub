@@ -29,9 +29,9 @@ The example uses:
 * Install [`minikube`](https://kubernetes.io/docs/tasks/tools/install-minikube/)
 
 
-* Start `minikube` virtual machine:
+* Start `minikube` virtual machine using docker local instance (that's why we're using sudo):
 ```
-minikube start --cpus=2 --memory=2040 --vm-driver=virtualbox
+sudo minikube start --vm-driver=none
 ```
 
 * Create a namespace only for RabbitMQ test:
